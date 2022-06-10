@@ -1,0 +1,135 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    /* background-color: #FF2E63; */
+    background: linear-gradient(45deg, #FF2E63, #010A43);
+}
+
+.wrapper {
+    margin: 5rem auto;
+    width: 45%;
+    min-height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff40;
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.logoPart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 4px solid #FF9D9D;
+}
+
+.logoPart span {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.formPart {
+    /* background-color: green; */
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.formPart h3 {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: start;
+    padding-left: 0.5rem;
+}
+
+.formPart p {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: start;
+    padding-left: 0.5rem;
+
+}
+
+.formPart .formTop {
+    /* background-color: red; */
+    width: 100%;
+    padding-left: .5rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.formPart input {
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    outline: none;
+    margin: .4rem auto;
+    border-style: hidden;
+    border-bottom-style: groove;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    font-family: "IBM Plex Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFC2C2;
+    text-align: center;
+}
+
+.formPart input:focus {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.formPart input::placeholder {
+    color: #FFC2C2;
+    opacity: 0.7;
+}
+
+.wrapper button {
+    margin: .5rem auto;
+    border-radius: 10px;
+    background-color: #FF9D9D;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    color: rgb(40, 30, 30);
+    transition: all 300ms;
+    border: none;
+}
+
+.wrapper button:hover {
+    background-color: #FFC2C2;
+    color: #010A43;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    body {
+        height: 100vh;
+    }
+
+    .wrapper {
+        margin: 5rem auto;
+        width: 70%;
+        min-height: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffffff40;
+        backdrop-filter: blur(20px);
+        border-radius: 15px;
+        padding: 1rem;
+    }
+}
